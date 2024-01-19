@@ -4,9 +4,10 @@ on: push
 
 jobs:
     first_jobs:
+
         run-on: ubuntu-latest
         steps:
-                    - name: update runner
+        - name: update runner
           run: sudo apt update -y
 
         - name: check docker version
