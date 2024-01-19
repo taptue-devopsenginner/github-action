@@ -1,5 +1,7 @@
 name: new action
 
+on: push
+
 jobs:
     first-jobs:
         run-on: ubuntu-latest
