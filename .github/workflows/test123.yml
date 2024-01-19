@@ -1,0 +1,19 @@
+name: new action
+
+jobs:
+    first-jobs:
+        run-on: ubuntu-latest
+        steps:
+        - name: update runner
+          run: sudo apt update -y
+
+        - name: check docker version
+          run: docker ps =a
+
+        - name: echo something
+          run: echo "welcome to first action"
+        - name: run docker container
+          run: docker run -d --name jenkins -p 8080:8080 jrnkins/jenkins:latest
+
+        - name: check docker container
+          run: docker ps -a
