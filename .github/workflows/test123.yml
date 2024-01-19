@@ -3,7 +3,7 @@ name: new action
 on: push
 
 jobs:
-    first-jobs:
+    first_jobs:
         run-on: ubuntu-latest
         steps:
                     - name: update runner
