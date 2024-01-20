@@ -5,7 +5,7 @@ on: push
 jobs:
     first_jobs:
 
-        run-on: ubuntu-latest
+        runs-on: ubuntu-latest
         steps:
         - name: update runner
           run: sudo apt update -y
